@@ -41,4 +41,3 @@ curl http://your_esp_board_aip_address/ir?code=2800,900,500,450,500,450,500,900,
  * Connect to USB-Serial terminal using **screen**, **puty**, **cutecom** or **miniterm** to connect to your ESP board
  * For each button on your remote, capture the IR codes from your ESP board
  * Store the codes in a file and [follow guide lines](https://github.com/GssMahadevan/PhoneRemote-Server)
- *
