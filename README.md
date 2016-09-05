@@ -20,7 +20,7 @@ run python. So it can be tested with Raspberry (and other Linux, Windows and MAC
  * Install IRremoteESP8266 for ESP8266 from https://github.com/markszabo/IRremoteESP8266
  
  * Buy/prepare IR sending board
- * Connect the IR TX to D6 PIN (D6 pin on NodeMCU board )
+ * Connect the IR TX to D6 PIN (D6 pin on NodeMCU board, pin number might vary based on your configuration )
  
 ## Dependent Projects
  * https://github.com/GssMahadevan/PhoneRemote-Server
