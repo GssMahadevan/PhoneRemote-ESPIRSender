@@ -13,7 +13,7 @@
       * Rate control of http requests
 
   Author: GSS Mahadevan
-  Version: 0.1    
+  Version: 0.3  5-Sep-2016
  */
 
 #include <ESP8266WiFi.h>
