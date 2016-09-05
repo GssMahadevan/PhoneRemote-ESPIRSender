@@ -35,7 +35,7 @@ run python. So it can be tested with Raspberry (and other Linux, Windows and MAC
 curl http://your_esp_board_aip_address/ir?code=2800,900,500,450,500,450,500,900,550,900,1450,900,500,450,500,450,500,450,500,450,500,450,500,450,500,450,500,450,1000,900,500,450,500,450,1000,450,500,900,500,450,500,450,500,450,500,450,500,450,500,450,500,450,500,450,500,450,500,450,500,450,1000,450,500,900,1000&hz=38&count=1
 ```
 
-## Add new codes for TV/IR-Appliance:
+## Add new codes for new TV/IR-Appliance:
  * Use the ESP sketch ( https://github.com/markszabo/IRremoteESP8266/tree/master/examples/IRrecvDumpV2 ) and burn in your ESP.
  * Buy/Prepare IR receiver board. Connect to your ESP to appropriate PIN
  * Connect to USB-Serial terminal using **screen**, **puty**, **cutecom** or **miniterm** to connect to your ESP board
