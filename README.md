@@ -21,9 +21,24 @@ run python. So it can be tested with Raspberry (and other Linux, Windows and MAC
  
  * Buy/prepare IR sending board
  * Connect the IR TX to D6 PIN (D6 pin on NodeMCU board, pin number might vary based on your configuration )
+ * Change SSID and Password in IRServer_my.ino to suite your wifi network
  
 ## Dependent Projects
  * https://github.com/GssMahadevan/PhoneRemote-Server
  * https://github.com/GssMahadevan/PhoneRemote-AndroidApp
  
 
+## UT
+ * Test ESP working or not by using curl command like:
+ 
+ ```
+curl http://your_esp_board_aip_address/ir?code=2800,900,500,450,500,450,500,900,550,900,1450,900,500,450,500,450,500,450,500,450,500,450,500,450,500,450,500,450,1000,900,500,450,500,450,1000,450,500,900,500,450,500,450,500,450,500,450,500,450,500,450,500,450,500,450,500,450,500,450,500,450,1000,450,500,900,1000&hz=38&count=1
+```
+
+## Add new codes for TV/IR-Appliance:
+ * Use the ESP sketch ( https://github.com/markszabo/IRremoteESP8266/tree/master/examples/IRrecvDumpV2 ) and burn in your ESP.
+ * Buy/Prepare IR receiver board. Connect to your ESP to appropriate PIN
+ * Connect to USB-Serial terminal using **screen**, **puty**, **cutecom** or **miniterm** to connect to your ESP board
+ * For each button on your remote, capture the IR codes from your ESP board
+ * Store the codes in a file and follow guide lines as in https://github.com/GssMahadevan/PhoneRemote-Server
+ *
